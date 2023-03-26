@@ -3,6 +3,15 @@ import Hero from "~/component/hero/hero";
 import { aboutData, heroData } from "~/data";
 import type { AboutDataType } from "~/data";
 import Layout from "~/component/layout";
+import type { V2_MetaFunction } from "@remix-run/node";
+
+export const meta: V2_MetaFunction = () => {
+  return [
+    {
+      title: "Fikri Alwan Ramadhan | About",
+    },
+  ];
+};
 
 export default function Index() {
   return (
